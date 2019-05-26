@@ -1,0 +1,122 @@
+<!-- Zrobic dodawanie dynamiczne, usuwanie,  filtrowanie -->
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+   <div class="container">
+      <nav>
+         <button class='open-modal'>Dodaj Zadanie</button>
+            <div class='filter-buttons'>
+               <p>Filtruj Zadania: </p>
+               <button id='a'>Wszystkie</button>
+               <button id='b'>Ukończone</button>
+               <button id='c'>W trakcie</button>
+               <button id='d'>Nie zaczęte</button>
+            </div>
+      </nav>
+      <div class="container__add-modal modal">
+  		   <div class="modal__content">
+    			<span class="content__close recipe-close">
+    				&times;
+    			</span>
+    			<div class="content__title">
+    				Nowe Zadanie
+    			</div>
+    			<form class="content__form"> 
+    				<div class="form__title">
+    					<div class="title__title">
+   						Tytuł Zadania:
+ 						</div> 
+    					<input class="title__input" type="text">
+               </div>
+               <!-- <label for="">
+                  Stan Zadania:
+               </label>
+               <select name="stan" id="stan"> 
+                  <option value="Nie zaczęty">Nie Zaczęty</option>
+                  <option value="W Trakcie">W Trakcie</option>
+                  <option value="Zrobiony">Zrobiony</option>
+               </select> -->
+    				<div class="form__ingredients form-textarea">
+    					<div class="ingredient">
+   						<div class="ingredient__title">
+ 								Opcjonalny opis
+    						</div> 
+    						<textarea class="ingredient__input task__textArea"></textarea>
+    					</div>
+               </div>
+               <button class='form__button'>Dodaj</button>
+            </form>
+         </div>	
+      </div>
+      <div class="tasks">
+         <!-- <div class="task">
+            <div class="task__title">
+               Nowe Zadanie Nr. 1
+               <img class='delete' src="./delete.svg" alt="">
+            </div>
+            <div class="task__state">
+               Zrobione
+            </div>
+            <div class="task__desc">
+               Brak Opisu.
+            </div>
+         </div>
+         <div class="task">
+            <div class="task__title">
+               Naprawić Formularz Logowania
+               <img class='delete' src="./delete.svg" alt="">
+            </div>
+            <div class="task__state">
+               W Trakcie
+            </div>
+            <div class="task__desc">
+               
+            </div>
+         </div> -->
+      </div>
+   </div>
+   <script src='./app.js'></script>
+</body>
+
+
+
+
+
+
+<!-- <div class="container__add-modal modal">
+   <div class="modal__content">
+     <span class="content__close recipe-close">
+        &times;
+     </span>
+     <div class="content__title">
+        Nowe Zadanie
+     </div>
+     <form class="content__form"> 
+        <div class="form__title">
+           <div class="title__title">
+             Tytuł Zadania:
+           </div> 
+           <input class="title__input" type="text">
+       </div>
+       <label for="">
+          Stan Zadania:
+       </label>
+       <select name="stan" id="stan"> 
+          <option value="Nie zaczęty">Nie Zaczęty</option>
+          <option value="W Trakcie">W Trakcie</option>
+          <option value="Zrobiony">Zrobiony</option>
+       </select>
+        <div class="form__ingredients form-textarea">
+           <div class="ingredient">
+             <div class="ingredient__title">
+                 Opcjonalny opis
+              </div> 
+              <textarea class="ingredient__input task__textArea"></textarea>
+           </div>
+       </div>
+       <button class='form__button'>Dodaj</button>
+    </form>
+ </div>	
+</div> -->
